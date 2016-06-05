@@ -38,7 +38,9 @@ namespace SearchLibrary
             {
                 Rows = query.Rows,
                 StartOrCursor = new StartOrCursor.Start(query.Start),
-                FilterQueries = filtersFacets.BuildFilterQueries(query)
+                FilterQueries = filtersFacets.BuildFilterQueries(query),
+                Facet = filtersFacets.BuildFacets(),
+                Stats = filtersFacets.BuildStats()
             };
 
             //Execute the query
@@ -52,6 +54,7 @@ namespace SearchLibrary
             extractResponse.SetHeader(queryResponse, solrResults);
             extractResponse.SetBody(queryResponse, solrResults);
             extractResponse.SetSpellcheck(queryResponse, solrResults);
+            extractResponse.SetFacets(queryResponse, solrResults);
 
             //Return response;
             return queryResponse;

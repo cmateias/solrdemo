@@ -1,5 +1,6 @@
 ﻿using SearchLibrary.Models;
 using SolrNet;
+using SolrNet.Commands.Parameters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,26 @@ namespace SearchLibrary.Implementation
             }
 
             return filters; 
+        }
+
+        internal FacetParameters BuildFacets()
+        {
+            return new FacetParameters
+            {
+                Queries = new List<ISolrFacetQuery>{
+        new SolrFacetFieldQuery("author"){MinCount = 1},
+        new SolrFacetFieldQuery("tags"){MinCount = 1},
+        new SolrFacetDateQuery("releasedate",DateTime.Now.AddYears(-10),DateTime.Now,"+1YEAR")
+        }
+            };
+        }
+
+        internal StatsParameters BuildStats()
+        {
+            StatsParameters statsParams = new StatsParameters();
+            statsParams.AddField("durationseconds");
+
+            return statsParams;
         }
 
     }

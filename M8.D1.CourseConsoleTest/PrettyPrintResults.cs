@@ -39,6 +39,33 @@ namespace CourseConsoleTest
                 Console.WriteLine();
             }
 
+            Console.WriteLine();
+            Console.WriteLine("Facets");
+
+            Console.WriteLine("- Authors");
+            foreach (KeyValuePair<string, int> author in queryResponse.AuthorsFacet)
+            {
+                Console.WriteLine(" " + author.Key + " (" + author.Value + ")");
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("- Tags");
+            foreach (KeyValuePair<string, int> tag in queryResponse.TagsFacet)
+            {
+                Console.WriteLine(" " + tag.Key + " (" + tag.Value + ")");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("- Release Dates");
+            foreach (KeyValuePair<string, int> releaseDate in queryResponse.ReleaseDatesFacet)
+            {
+                Console.WriteLine(" " + releaseDate.Key + " (" + releaseDate.Value + ")");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Average course duration" + queryResponse.AverageCourseDuration);
+
             Console.WriteLine("--- Results found: " + queryResponse.TotalHits);
         }
     }

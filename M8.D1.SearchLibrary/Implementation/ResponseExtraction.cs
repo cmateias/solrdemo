@@ -27,16 +27,41 @@ namespace SearchLibrary.Implementation
         internal void SetSpellcheck(QueryResponse queryResponse, SolrQueryResults<Course> solrResults)
         {
             List<string> spellSuggestions = new List<string>();
-             
-             foreach (SpellCheckResult spellResult in solrResults.SpellChecking)
-             {
-                 foreach (string suggestion in spellResult.Suggestions)
-                 {
-                     spellSuggestions.Add(suggestion);
-                 }
-             }
 
-             queryResponse.DidYouMean = spellSuggestions;
+            foreach (SpellCheckResult spellResult in solrResults.SpellChecking)
+            {
+                foreach (string suggestion in spellResult.Suggestions)
+                {
+                    spellSuggestions.Add(suggestion);
+                }
+            }
+
+            queryResponse.DidYouMean = spellSuggestions;
+        }
+
+        internal void SetFacets(QueryResponse queryResponse, SolrQueryResults<Course> solrResults)
+        {
+            //Authors
+            if (solrResults.FacetFields.ContainsKey("author"))
+            {
+                queryResponse.AuthorsFacet = solrResults.FacetFields["author"].Select(facet => new KeyValuePair<string, int>(facet.Key, facet.Value)).ToList();
+            }
+
+            //
+            if (solrResults.FacetFields.ContainsKey("tags"))
+            {
+                queryResponse.TagsFacet = solrResults.FacetFields["tags"].Select(facet => new KeyValuePair<string, int>(facet.Key, facet.Value)).ToList();
+            }
+
+            //
+            if (solrResults.FacetDates.ContainsKey("releasedate"))
+            {
+                queryResponse.ReleaseDatesFacet = solrResults.FacetDates["releasedate"].DateResults.Select(facet => new KeyValuePair<string, int>(facet.Key.ToShortDateString(), facet.Value)).ToList();
+            }
+
+            TimeSpan ts = TimeSpan.FromSeconds( (int)solrResults.Stats["durationseconds"].Mean);
+
+            queryResponse.AverageCourseDuration = ts.ToString(@"hh\:mm\:ss\:fff");
         }
     }
 }

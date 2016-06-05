@@ -54,6 +54,7 @@
     <Compile Include="CourseSearch.cs" />
     <Compile Include="Implementation\Connection.cs" />
     <Compile Include="Implementation\FiltersFacets.cs" />
+    <Compile Include="Implementation\Highlights.cs" />
     <Compile Include="Implementation\ResponseExtraction.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseQuery.cs" />

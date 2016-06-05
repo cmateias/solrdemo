@@ -22,6 +22,24 @@ namespace SearchLibrary.Implementation
         internal void SetBody(QueryResponse queryResponse, SolrQueryResults<Course> solrResults)
         {
             queryResponse.Results = (List<Course>)solrResults;
+
+            foreach (Course course in queryResponse.Results)
+            {
+                if (solrResults.Highlights.ContainsKey(course.CourseId))
+                {
+                    HighlightedSnippets snippets = solrResults.Highlights[course.CourseId];
+
+                    if (snippets.ContainsKey("coursetitle"))
+                    {
+                        course.CourseTitle = snippets["coursetitle"].FirstOrDefault();
+                    }
+
+                    if (snippets.ContainsKey("description"))
+                    {
+                        course.CourseTitle = snippets["description"].FirstOrDefault();
+                    }
+                }
+            }
         }
 
         internal void SetSpellcheck(QueryResponse queryResponse, SolrQueryResults<Course> solrResults)

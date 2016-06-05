@@ -25,6 +25,7 @@ namespace SearchLibrary
         {
             //Create an object to hold results
             FiltersFacets filtersFacets = new FiltersFacets();
+            Highlights highlights = new Highlights();
 
             SolrQueryResults<Course> solrResults;
             QueryResponse queryResponse = new QueryResponse();
@@ -41,6 +42,8 @@ namespace SearchLibrary
                 FilterQueries = filtersFacets.BuildFilterQueries(query),
                 Facet = filtersFacets.BuildFacets(),
                 Stats = filtersFacets.BuildStats()
+                Stats = filtersFacets.BuildStats(),
+                Highlight = highlights.BuildHighlightParameters(),
             };
 
             //Execute the query

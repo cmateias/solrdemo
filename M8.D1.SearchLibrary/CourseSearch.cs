@@ -24,6 +24,8 @@ namespace SearchLibrary
         public QueryResponse DoSearch(CourseQuery query)
         {
             //Create an object to hold results
+            FiltersFacets filtersFacets = new FiltersFacets();
+
             SolrQueryResults<Course> solrResults;
             QueryResponse queryResponse = new QueryResponse();
             
@@ -35,7 +37,8 @@ namespace SearchLibrary
             QueryOptions queryOptions = new QueryOptions
             {
                 Rows = query.Rows,
-                StartOrCursor = new StartOrCursor.Start(query.Start)
+                StartOrCursor = new StartOrCursor.Start(query.Start),
+                FilterQueries = filtersFacets.BuildFilterQueries(query)
             };
 
             //Execute the query

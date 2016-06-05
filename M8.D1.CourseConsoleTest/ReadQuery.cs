@@ -19,6 +19,27 @@ namespace CourseConsoleTest
             //Read the query
             query.Query = Console.ReadLine();
 
+            Console.WriteLine("Do you want to specify an author?");
+            string author = Console.ReadLine();
+
+            while (!string.IsNullOrEmpty(author))
+            {
+                query.AuthorFilter.Add(author);
+
+                Console.WriteLine("Add another author?");
+                author = Console.ReadLine();
+            }
+
+            Console.WriteLine("Do you want to specify a tag?");
+            string tag = Console.ReadLine();
+            while (!string.IsNullOrEmpty(tag))
+            {
+                query.TagFilter.Add(tag);
+
+                Console.WriteLine("Add another tag?");
+                tag = Console.ReadLine();
+            }
+
             //return the query object 
             return query;
         }

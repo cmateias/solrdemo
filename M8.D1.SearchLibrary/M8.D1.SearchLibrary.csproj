@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CourseSearch.cs" />
     <Compile Include="Implementation\Connection.cs" />
+    <Compile Include="Implementation\ExtraParameters.cs" />
     <Compile Include="Implementation\FiltersFacets.cs" />
     <Compile Include="Implementation\Highlights.cs" />
     <Compile Include="Implementation\ResponseExtraction.cs" />

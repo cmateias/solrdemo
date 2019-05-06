@@ -1,0 +1,12 @@
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\CourseConsoleTest.exe
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\CourseConsoleTest.pdb
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\SearchLibrary.dll
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\SolrNet.dll
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\HttpWebAdapters.dll
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\bin\Debug\SearchLibrary.pdb
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\obj\Debug\Solr.CourseConsoleTest.csprojAssemblyReference.cache
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\obj\Debug\Solr.CourseConsoleTest.csproj.CoreCompileInputs.cache
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\obj\Debug\Solr.CourseConsoleTest.csproj.CopyComplete
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\obj\Debug\CourseConsoleTest.exe
+C:\Training\Repos\SolrProject\src\M8.D1.CourseConsoleTest\obj\Debug\CourseConsoleTest.pdb

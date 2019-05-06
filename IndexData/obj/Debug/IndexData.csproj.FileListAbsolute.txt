@@ -1,0 +1,17 @@
+C:\Training\Repos\SolrProject\src\IndexAllCourses\bin\Debug\IndexAllCourses.exe.config
+C:\Training\Repos\SolrProject\src\IndexAllCourses\bin\Debug\IndexAllCourses.exe
+C:\Training\Repos\SolrProject\src\IndexAllCourses\bin\Debug\IndexAllCourses.pdb
+C:\Training\Repos\SolrProject\src\IndexAllCourses\bin\Debug\Newtonsoft.Json.dll
+C:\Training\Repos\SolrProject\src\IndexAllCourses\obj\Debug\IndexData.csproj.CoreCompileInputs.cache
+C:\Training\Repos\SolrProject\src\IndexAllCourses\obj\Debug\IndexData.csproj.CopyComplete
+C:\Training\Repos\SolrProject\src\IndexAllCourses\obj\Debug\IndexAllCourses.exe
+C:\Training\Repos\SolrProject\src\IndexAllCourses\obj\Debug\IndexAllCourses.pdb
+C:\Training\Repos\SolrProject\src\IndexData\bin\Debug\IndexAllCourses.exe.config
+C:\Training\Repos\SolrProject\src\IndexData\bin\Debug\IndexAllCourses.exe
+C:\Training\Repos\SolrProject\src\IndexData\bin\Debug\IndexAllCourses.pdb
+C:\Training\Repos\SolrProject\src\IndexData\bin\Debug\Newtonsoft.Json.dll
+C:\Training\Repos\SolrProject\src\IndexData\obj\Debug\IndexData.csprojAssemblyReference.cache
+C:\Training\Repos\SolrProject\src\IndexData\obj\Debug\IndexData.csproj.CoreCompileInputs.cache
+C:\Training\Repos\SolrProject\src\IndexData\obj\Debug\IndexData.csproj.CopyComplete
+C:\Training\Repos\SolrProject\src\IndexData\obj\Debug\IndexAllCourses.exe
+C:\Training\Repos\SolrProject\src\IndexData\obj\Debug\IndexAllCourses.pdb

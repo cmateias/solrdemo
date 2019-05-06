@@ -1,0 +1,13 @@
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\bin\Debug\SearchLibrary.dll
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\bin\Debug\SearchLibrary.pdb
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\obj\Debug\Solr.SearchLibrary.csproj.CoreCompileInputs.cache
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\obj\Debug\Solr.SearchLibrary.csproj.CopyComplete
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\obj\Debug\SearchLibrary.dll
+C:\Training\Repos\SolrProject\src\M8.D1.SearchLibrary\obj\Debug\SearchLibrary.pdb
+C:\Training\Repos\SolrProject\src\SearchLibrary\bin\Debug\SearchLibrary.dll
+C:\Training\Repos\SolrProject\src\SearchLibrary\bin\Debug\SearchLibrary.pdb
+C:\Training\Repos\SolrProject\src\SearchLibrary\obj\Debug\Solr.SearchLibrary.csprojAssemblyReference.cache
+C:\Training\Repos\SolrProject\src\SearchLibrary\obj\Debug\Solr.SearchLibrary.csproj.CoreCompileInputs.cache
+C:\Training\Repos\SolrProject\src\SearchLibrary\obj\Debug\Solr.SearchLibrary.csproj.CopyComplete
+C:\Training\Repos\SolrProject\src\SearchLibrary\obj\Debug\SearchLibrary.dll
+C:\Training\Repos\SolrProject\src\SearchLibrary\obj\Debug\SearchLibrary.pdb
